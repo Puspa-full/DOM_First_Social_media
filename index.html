@@ -154,5 +154,42 @@
 
    </div>
 
+   <!-- Create Post Modal -->
+
+   <div class="modal-overlay" id="createPostModal">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h2>Create New Post</h2>
+            <button class="modal-close" id="closeModal">X</button>
+         </div>
+         
+         <div class="modal-body">
+            <form action="" id="createPostForm">
+               <div class="form-group">
+                  <label for="postContent">What's on your mind?</label>
+                  <textarea 
+                     id="postContent"
+                     class="form-input"
+                     rows="4"
+                     placeholder="Share your thoughts.." required></textarea>
+               </div>
+               <div class="form-group">
+                  <label for="postCategory">Category</label>
+                  <select id="postCategory" class="form-select" required>
+                     <option value="technology">Technology</option>
+                     <option value="food">Food</option>
+                     <option value="travel">Travel</option>
+                     <option value="music">Music</option>
+                  </select>
+               </div>
+               <div class="form-actions">
+                  <button type="button" class="btn-secondary" id="cancelPost">Cancel</button>
+                  <button type="submit" class="btn-primary">Publish Post</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
 </body>
 </html>
