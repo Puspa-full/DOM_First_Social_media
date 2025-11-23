@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <!-- Header Section -->
+
+   <header class="header">
+      <div class="header-container">
+         <div class="logo">
+            <span class="logo-icon">🌐</span>
+            <h1>SocialHub</h1>
+         </div>
+
+         <nav class="nav">
+
+            <button class="nav-btn active" data-view="feed">
+               <span class="nav-icon">🏠</span>
+               Feed
+            </button>
+
+            <button class="nav-btn" data-view="trending">
+               <span class="nav-icon">🔥</span>
+               Trending
+            </button>
+
+            <button class="nav-btn" data-view="saved">
+               <span class="nav-icon">🔖</span>
+               Saved
+            </button>
+
+         </nav>
+
+         <div class="user-section">
+            <div class="user-info">
+               <span class="user-avatar">👤</span>
+               <span class="user-name" id="userName">Guest User</span>
+            </div>
+
+            <button class="btn-create-post" id="createPostBtn">➕ Create Post</button>
+         </div>
+      </div>
+   </header>
+
+   <!-- MAIN CONTAINER -->
+
+   <div class="main-container">
+      <aside class="sidebar">
+
+         <!-- User Stats Card -->
+         <div class="stats-card">
+            <h3>Your Stats</h3>
+
+            <div class="stat-item">
+               <span class="stat-label">Posts Created</span>
+               <span class="stat-value" id="totalLikes">0</span>
+            </div>
+
+            <div class="stat-item">
+               <span class="stat-label">Comments Made</span>
+               <span class="stat-value" id="totalLikes">0</span>
+            </div>
+
+            <div class="stat-item">
+               <span class="stat-label">Total Likes</span>
+               <span class="stat-value" id="totalLikes">0</span>
+            </div>
+
+         </div>
+
+         <!-- FILTER SECTION -->
+
+         <div class="filter-card">
+            <h3>Filter Posts</h3>
+            <div class="filter-options">
+
+               <button class="filter-btn active">
+                  All Posts
+               </button>
+
+               <button class="filter-btn" data-category="technology">💻 Technology</button>
+
+               <button class="filter-btn" data-category="food">🍕 Food</button>
+
+               <button class="filter-btn" data-category="travel">✈️ Travel</button>
+
+               <button class="filter-btn" data-category="music">🎵 Music</button>
+            </div>
+         </div>
+
+         <!-- FAQ Accordion -->
+
+         <div class="faq-card">
+            <h3>Help & FAQ</h3>
+            <div class="accordion">
+
+               <!-- First Accrodion Item -->
+               <div class="accordion-item">
+                  <button class="accordion-header">How do I Create A Post? <span class="accordion-icon">▼</span>
+                  </button>
+                  <div class="accordion-content">
+                     <p>Click the "Create Post" button in the headder, fill in your content, choose a category, and publish!!</p>
+                  </div>
+               </div>
+
+               <!-- Second Accrodion Item -->
+               <div class="accordion-item">
+                  <button class="accordion-header">Can I Edit My Posts?<span class="accordion-icon">▼</span>
+                  </button>
+                  <div class="accordion-content">
+                     <p>Yes! Click the edit icon (✏️) on any of your posts to modify the content. </p>
+                  </div>
+               </div>
+
+               <!-- Third Accrodion Item -->
+               <div class="accordion-item">
+                  <button class="accordion-header">How Does Saving Posts Work?<span class="accordion-icon">▼</span>
+                  </button>
+                  <div class="accordion-content">
+                     <p>Click the bookmark icon (🔖) to save posts. Access them anytime from the "Saved" tab!</p>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </aside>
+
+      <!-- MAIN CONTENT AREA -->
+
+      <main class="content-area">
+         <!-- Current Time Display (updates with setInterval) -->
+
+         <div class="time-display">
+            <span id="currentTime">Loading time...</span>
+         </div>
+
+         <!-- Posts Feed -->
+         <div class="posts-container" id="postsContainer">
+            <!-- Posts will be dynamically Inserted here -->
+            <div class="empty-state" id="emptyState">
+               <div class="empty-icon"></div>
+               <h2>No Posts Yet</h2>
+               <p>Be the first to share something amazing!</p>
+               <button class="btn-primary" id="emptyCreateBtn">Create Your First Post</button>
+            </div>
+         </div>
+
+      </main>
+
+   </div>
+
+</body>
+</html>
