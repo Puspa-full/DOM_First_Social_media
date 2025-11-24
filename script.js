@@ -30,3 +30,20 @@ const postsContainer = document.querySelector('#postContainer');
 const emptyState = document.querySelector('#emptyState');
 
 // Create Post Modal elements
+const createPostModal = document.querySelector('#createPostModal');
+const createPostForm = document.querySelector ('#createPostForm');
+const postContentInput = document.querySelector('#postContent');
+const postCategorySelect = document.querySelector('#postCategory');
+const closeModalBtn = document.querySelector('#closeModal')
+const cancelPostBtn = document.querySelector('#cancelPost');
+
+// Edit Post Modal Elements
+const editPostModal = document.querySelector('#editPostModal');
+const editPostForm = document.querySelector('#editPostForm');
+const editPostContent = document.querySelector("#editPostContent");
+const closeEditModelBtn = document.querySelector('#closeEditModal');
+const cancelEditBtn = document.querySelector('#cancelEdit');
+
+// Toast Notification Elements
+const toast = document.querySelector('#toast');
+const toastMessage = document.querySelector('#toastMessage');

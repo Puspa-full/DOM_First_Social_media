@@ -191,6 +191,34 @@
       </div>
    </div>
 
+   <!-- Edit Post Modal -->
+
+   <div class="modal-overlay" id="editPostModal">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h2>Edit Post</h2>
+            <button class="modal-close" id="closeEditModal">X</button>
+         </div>
+         <div class="modal-body">
+            <form id="editPostForm">
+               <div class="form-group">
+                  <label for="editPostContent">Update Your Post</label>
+                  <textarea 
+                     id="editPostContent"
+                     class="form-input"
+                     rows="4"
+                     required
+                  ></textarea>
+               </div>
+               <div class="form-action">
+                  <button type="button" class="btn-secondary" id="cancelEdit">Cancel</button>
+                  <button type="submit" class="btn-primary">Update Post</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
    <!-- Toast Notification -->
 
    <div class="toast" id="toast">
